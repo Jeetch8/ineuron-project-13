@@ -43,10 +43,12 @@ nav ul li{
     font-size: 50px;
     margin-top: 150px;
     line-height: 70px;
+    max-width: 300px;
 }
 .section1__left div{
     margin-top: 40px;
     line-height: 25px;
+    max-width: 390px;
 }
 /* Section1 End */
 
@@ -73,6 +75,7 @@ nav ul li{
 .section2__right h2{
     margin-top: 70px;
     font-size: 30px;
+    max-width: 350px;
 }
 .section2__right li h2{
     margin-top: 40px;
@@ -82,6 +85,7 @@ nav ul li{
     margin-top: 20px;
     font-size: 15px;
     font-weight: 400;
+    max-width: 300px;
 }
 .section2__right ul{
     margin-left: 30px;
@@ -138,19 +142,48 @@ nav ul li{
 }
 /* Section3  End*/
 
-@media only screen and (max-width:1460px){
-    .section1 ul li:not(.section1 ul button){
-        display: none;
+
+
+@media only screen and (max-width:1500px){
+    .section1,.section2,.section3{
+        padding: 50px 50px;
     }
+}
+
+@media only screen and (max-width:1200px){
     .section1__text{
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
+    }
+    .section1__text h1{
+        font-size: 40px;
+        line-height: 50px;
     }
     .section2{
         flex-direction: column;
         align-items: center;
     }
+    .section1__text h1{
+        margin-top: 50px;
+        max-width: 900px;
+    }
+    .section1__text div{
+        max-width: 600px;
+    }
     .cards{
         flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    nav ul li{
+        display: none;
+    }
+    .section2__right ul h3{
+        max-width: 500px;
+    }
+    .section2__head{
+        max-width: 500px;
+    }
+    .section3 h1{
+        font-size: 30px;
     }
 }
